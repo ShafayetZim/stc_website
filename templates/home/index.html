@@ -1,0 +1,436 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <!--====== Required meta tags ======-->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--====== Title ======-->
+        <title>Home - STC</title>
+        <!--====== Favicon Icon ======-->
+        <link rel="shortcut icon" href="{% static 'front-end/images/favicon.ico' %}" type="image/png">
+        <!--====== Bootstrap css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/bootstrap.min.css' %}">
+        <!--====== Fontawesome css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/fonts/fontawesome/css/all.css' %}">
+        <!--====== Fontawesome css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/fonts/flaticon/flaticon.css' %}">
+        <!--====== Magnific Popup css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/magnific-popup.css' %}">
+        <!--====== Slick css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/slick.css' %}">
+        <!--====== Nice select css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/nice-select.css' %}">
+        <!--====== Jquery ui css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/jquery-ui.min.css' %}">
+        <!--====== Animate css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/animate.css' %}">
+        <!--====== Default css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/default.css' %}">
+        <!--====== Style css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/style.css' %}">
+    </head>
+    <body>
+        <!--====== Start Preloader ======-->
+        <div class="preloader">
+            <div class="lds-ellipsis">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!--====== End Preloader ======-->
+        <!--====== Search From ======-->
+		<div class="modal fade show" id="search-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form>
+                        <div class="form_group">
+                        	<input type="text" class="form_control" placeholder="Search here...">
+                        	<button class="search_btn"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!--====== Search From ======-->
+        <!--====== Start Header ======-->
+        <header class="header-area header-area-v1">
+            <!--
+            <div class="header-top">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="col-lg-8">
+                            <div class="top-left">
+                                <ul>
+                                    <li><span><i class="fas fa-envelope"></i><a href="mailto:info@webmail.com">info@webmail.com</a></span></li>
+                                    <li><span><i class="fas fa-phone"></i><a href="tel:+9484844849493">+948 484 4849 493</a></span></li>
+                                    <li><span><i class="fas fa-map-marker-alt"></i>234 Green Street, NY, USA</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="top-right">
+                                <ul class="social-link">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    -->
+                   <!--  </div>
+                </div>
+            </div> -->
+            <div class="header-navigation">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2 col-md-6 col-6">
+                            <div class="site-branding">
+                                <div class="brand-logo">
+                                    <a href="{% url 'home' %}"><img src="{% static 'front-end/images/5.png' %}" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 col-md-4 col-4">
+                            <div class="nav-menu">
+                                <!-- Mobile Menu Logo -->
+                                <div class="site-branding text-center ml-2 mr-2 mb-4 d-none">
+                                    <div class="brand-logo">
+                                        <a href="{% url 'home' %}"><img src="{% static 'front-end/images/logo-1.png' %}" alt=""></a>
+                                    </div>
+                                </div>
+                                <!-- Search form -->
+                               <!-- <div class="nav-search d-none">
+                                    <form>
+                                        <div class="form_group">
+                                            <input type="search" class="form_control" name="search" placeholder="Search Here">
+                                        </div>
+                                    </form>
+                                </div>-->
+                                <!-- navbar-close -->
+                                <div class="navbar-close">
+                                    <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                </div>
+                                <!-- main menu -->
+                                <nav class="main-menu">
+                                    <ul>
+                                        <li class="menu-item menu-item-has-children"><a href="{% url 'home' %}"><b>Home</b></a>
+
+                                        </li>
+                                        <li class="menu-item"><a href="{% url 'about' %}"><b>About Us</b></a></li>
+
+                                        <li class="menu-item menu-item-has-children"><a href="{% url 'product' %}"><b>Our Products</b></a>
+
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="{% url 'gallery' %}"><b>Gallery</b></a>
+
+                                        </li>
+
+                                        <li class="menu-item"><a href="{% url 'contact' %}"><b>Contact Us</b></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- navbar toggler -->
+                            <div class="navbar-toggler float-right">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </header>
+        <!--====== End Header ======-->
+        <!--====== Start Hero section ======-->
+        <section class="hero-area-v2">
+            <div class="hero-slider-two">
+                <div class="single-slider bg_cover" style="background-image: url(' {% static 'front-end/images/bg/sopno3.jpg' %} '); height: 10px;">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-slider bg_cover" style="background-image: url(' {% static 'front-end/images/bg/sopno2.jpg' %} '); height: 10px;">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-slider bg_cover" style="background-image: url(' {% static 'front-end/images/bg/slider1.jpg' %} '); height: 10px;">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-slider bg_cover" style="background-image: url(' {% static 'front-end/images/bg/slider2.jpg' %} '); height: 10px;">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--====== End Hero section ======-->
+        <!--====== Start About Section ======-->
+        <section class="about-area-v1 pb-60">
+            <div class="container">
+                <div class="row align-items-center" style="margin-top: 22px;">
+                    <div class="col-lg-6">
+                        <div class="about-img mb-60 wow slideInLeft">
+                            <img src="{% static 'front-end/images/about/about-4.jpg' %}" alt="">
+                            <div class="experience-box">
+                                <p><span class="big-text">Since</span></p><br>
+                                <p><span class="big-text">2010</span></p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content-box mb-60">
+                            <div class="section-title mb-40 wow flipInY">
+                                <span class="span">About Us</span>
+                                <h2>Shapno Trading Corporation</h2>
+                            </div>
+                            <p>It is a long established fact that a reader will be distracted the readable content of a page when looking at its layout. The point of usineg Lorem Ipsum is that it has a more normal distribution.</p>
+                            <div class="row about-box wow fadeInDown">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="box d-flex mb-30">
+                                        <div class="icon">
+                                            <i class="flaticon-diamond"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h5>Best advisor company with
+                                                100+ happy clients</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="box d-flex mb-30">
+                                        <div class="icon">
+                                            <i class="flaticon-increase"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h5>We will grow your business
+                                                in whole world</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="box d-flex mb-30">
+                                        <div class="icon">
+                                            <i class="flaticon-guarantee"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h5>Our clients 100% satisfied price, quality and Our services </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="box d-flex mb-30">
+                                        <div class="icon">
+                                            <i class="flaticon-technical-support"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h5>We have a strong customer
+                                                support in every working days</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="{% url 'about' %}" class="main-btn">More About us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-area portfolio-area-v1 pt-110 pb-120">
+            <div class="section-top">
+                <div class="container">
+                    <div class="row align-items-end">
+                        <div class="col-lg-6 wow fadeInDown">
+                            <div class="section-title section-title-left mb-45">
+                                <span class="span">Recent Completed Works</span>
+                                <h2>Explore Our Products</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="protfolio-arrows-one mb-45"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-wrapper">
+                <div class="row protfolio-slider-one wow fadeInUp">
+                    <div class="col-lg-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-img">
+                                <img src="{% static 'front-end/images/portfolio/6.jpg' %}" alt="portfolio">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-img">
+                                <img src="{% static 'front-end/images/portfolio/5.jpg' %}" alt="portfolio">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-img">
+                                <img src="{% static 'front-end/images/portfolio/7.jpg' %}" alt="portfolio">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-img">
+                                <img src="{% static 'front-end/images/portfolio/8.jpg' %}" alt="portfolio">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-img">
+                                <img src="{% static 'front-end/images/portfolio/9.jpg' %}" alt="portfolio">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--====== End Portfolio section ======-->
+
+        <!--====== Start Footer Area ======-->
+        <footer class="bebsa-footer footer-v2 bg_cover">
+            <div class="container">
+                <div class="footer-widget pb-60 pt-65">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="footer-widget__column footer-widget__about">
+                                <div class="footer-widget__about-logo">
+                                    <a href="{% url 'home' %}"><img src="{% static 'front-end/images/7.png' %}" alt=""></a>
+
+                                            <p style="color:white;"><br>Welcome to Shapno Trading Corporation.
+                                            We are the main department of Shapno Trading Corporation.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="widget contact-widget mb-40">
+                                <h4 class="widget-title">Contact Info</h4>
+                                <div class="contact-info">
+                                    <div class="single-info d-flex align-items-center">
+                                        <div class="icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="info ml-15">
+                                            <p>42/2 M.H. Mansion, 1st Floor, Sayed Awlad Hossain Lane, Islampur, Dhaka-1100, Bangladesh</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-info d-flex align-items-center">
+                                        <div class="icon">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <div class="info ml-15">
+                                            <p><a href="tel:+3292283930002">+88-02-57396327</a></p>
+<!--                                            <p><a href="tel:+3292283930002">+88-01716-584384</a></p>-->
+                                        </div>
+                                    </div>
+                                    <div class="single-info d-flex align-items-center">
+                                        <div class="icon">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                        <div class="info ml-15">
+                                            <p><a href="mailto:office@webgmail.com">info@stchaque.com</a></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="copyright-text float-left">
+                                <p>Copyright &copy; Shapno Trading Corporation. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                         <div class="col-6">
+                              <div class="ekattorit float-right">
+                                <a href="https://www.ekattorit.com/" target="_blank"><span style="color:#FF0000">EKATTOR</span> <span style="color:green">iT</span></a>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--====== End Footer Area ======-->
+        <!--====== back-to-top ======-->
+        <a href="#" class="back-to-top" ><i class="fas fa-angle-up"></i></a>
+        <!--====== Jquery js ======-->
+        <script src="{% static 'front-end/js/vendor/modernizr-3.6.0.min.js' %}"></script>
+        <script src="{% static 'front-end/js/vendor/jquery-1.12.4.min.js' %}"></script>
+        <!--====== Bootstrap js ======-->
+        <script src="{% static 'front-end/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'front-end/js/popper.min.js' %}"></script>
+        <!--====== Slick js ======-->
+        <script src="{% static 'front-end/js/slick.min.js' %}"></script>
+        <!--====== Magnific Popup js ======-->
+        <script src="{% static 'front-end/js/jquery.magnific-popup.min.js' %}"></script>
+        <!--====== Isotope js ======-->
+        <script src="{% static 'front-end/js/isotope.pkgd.min.js' %}"></script>
+        <!--====== Imagesloaded js ======-->
+        <script src="{% static 'front-end/js/imagesloaded.pkgd.min.js' %}"></script>
+        <!--====== Easy Pie Chart ======-->
+        <script src="{% static 'front-end/js/jquery.easypiechart.min.js' %}"></script>
+        <!--====== counterup js ======-->
+        <script src="{% static 'front-end/js/jquery.counterup.min.js' %}"></script>
+        <!--====== waypoints js ======-->
+        <script src="{% static 'front-end/js/waypoints.min.js' %}"></script>
+        <!--====== Nice select js ======-->
+        <script src="{% static 'front-end/js/jquery.nice-select.min.js' %}"></script>
+        <!--====== Nice number js ======-->
+        <script src="{% static 'front-end/js/jquery.nice-number.min.js' %}"></script>
+        <!--====== Jquery ui js ======-->
+        <script src="{% static 'front-end/js/jquery-ui.min.js' %}"></script>
+        <!--====== wow js ======-->
+        <script src="{% static 'front-end/js/wow.min.js' %}"></script>
+        <!--====== Main js ======-->
+        <script src="{% static 'front-end/js/main.js' %}"></script>
+    </body>
+
+</html>

@@ -1,0 +1,318 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <!--====== Required meta tags ======-->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--====== Title ======-->
+        <title>Our Products - STC</title>
+        <!--====== Favicon Icon ======-->
+        <link rel="shortcut icon" href="{% static 'front-end/images/favicon.ico' %}" type="image/png">
+        <!--====== Bootstrap css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/bootstrap.min.css' %}">
+        <!--====== Fontawesome css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/fonts/fontawesome/css/all.css' %}">
+        <!--====== Fontawesome css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/fonts/flaticon/flaticon.css' %}">
+        <!--====== Magnific Popup css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/magnific-popup.css' %}">
+        <!--====== Slick css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/slick.css' %}">
+        <!--====== Nice select css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/nice-select.css' %}">
+        <!--====== Jquery ui css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/jquery-ui.min.css' %}">
+        <!--====== Animate css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/animate.css' %}">
+        <!--====== Default css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/default.css' %}">
+        <!--====== Style css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/style.css' %}">
+    </head>
+    <body>
+        <!--====== Start Preloader ======-->
+        <div class="preloader">
+            <div class="lds-ellipsis">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!--====== End Preloader ======-->
+        <!--====== Search From ======-->
+		<div class="modal fade show" id="search-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form>
+                        <div class="form_group">
+                        	<input type="text" class="form_control" placeholder="Search here...">
+                        	<button class="search_btn"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!--====== Search From ======-->
+        <!--====== Start Header ======-->
+        <header class="header-area header-area-v1">
+            <!--
+            <div class="header-top">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="col-lg-8">
+                            <div class="top-left">
+                                <ul>
+                                    <li><span><i class="fas fa-envelope"></i><a href="mailto:info@webmail.com">info@webmail.com</a></span></li>
+                                    <li><span><i class="fas fa-phone"></i><a href="tel:+9484844849493">+948 484 4849 493</a></span></li>
+                                    <li><span><i class="fas fa-map-marker-alt"></i>234 Green Street, NY, USA</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="top-right">
+                                <ul class="social-link">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    -->
+                    </div>
+                </div>
+            </div>
+            <div class="header-navigation">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2 col-md-6 col-6">
+                            <div class="site-branding">
+                                <div class="brand-logo">
+                                    <a href="{% url 'home' %}"><img src="{% static 'front-end/images/5.png' %}" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 col-md-4 col-4">
+                            <div class="nav-menu">
+                                <!-- Mobile Menu Logo -->
+                                <div class="site-branding text-center ml-2 mr-2 mb-4 d-none">
+                                    <div class="brand-logo">
+                                        <a href="{% url 'home' %}"><img src="{% static 'front-end/images/logo-1.png' %}" alt=""></a>
+                                    </div>
+                                </div>
+                                <!-- Search form -->
+                          <!--      <div class="nav-search d-none">
+                                    <form>
+                                        <div class="form_group">
+                                            <input type="search" class="form_control" name="search" placeholder="Search Here">
+                                        </div>
+                                    </form>
+                                </div>-->
+                                <!-- navbar-close -->
+                                <div class="navbar-close">
+                                    <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                </div>
+                                <!-- main menu -->
+                                <nav class="main-menu">
+                                    <ul>
+                                        <li class="menu-item menu-item-has-children"><a href="{% url 'home' %}"><b>Home</b></a>
+
+                                        </li>
+                                        <li class="menu-item"><a href="{% url 'about' %}"><b>About Us</b></a></li>
+
+                                        <li class="menu-item menu-item-has-children"><a href="{% url 'product' %}"><b>Our Products</b></a>
+                                        <ul class="sub-menu">
+
+                                                <li><a href="{% url 'product-category' %}">Rotary Nickel Screen</a></li>
+
+                                                <li><a href="{% url 'product-category2' %}">Flat-Bed Screen</a></li>
+                                                 <li><a href="{% url 'product-category3' %}">Reactive Dyes</a></li>
+                                                 <li><a href="{% url 'product-category4' %}">Auxiliaries</a></li>
+                                        </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="{% url 'gallery' %}"><b>Gallery</b></a>
+
+                                        </li>
+
+                                        <li class="menu-item"><a href="{% url 'contact' %}"><b>Contact Us</b></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- navbar toggler -->
+                            <div class="navbar-toggler float-right">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </header>
+        <!--====== End Header ======-->
+        <!--====== Start breadcrumbs-section section ======-->
+        <section class="breadcrumbs-section bg_cover" style="background-image: url('{% static 'front-end/images/bg/breadcrumbs-bg.jpg' %}');">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="breadcrumbs-content text-center">
+                            <h1>Our Products</h1>
+                            <ul class="link">
+                                <li><a href="{% url 'home' %}">Home</a></li>
+                                <li class="active">Our Products</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--====== End breadcrumbs-section section ======-->
+        <!--====== Start shop-grid-seciton section ======-->
+        <section class="shop-grid-section pt-120 pb-80 light-bg">
+            <div class="container">
+                <div class="row">
+                   <!--  <div class="col-lg-3">
+                        <div class="sidebar-widget-area woocommerce-widget-area">
+                        </div>
+                    </div> -->
+                    <div class="col-lg-12">
+                        <div class="shop-filter mb-40">
+
+                        </div>
+                        <div class="row">
+                            {% for item in product %}
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="woocommerce-product">
+                                    <div class="woocommerce-product-inner">
+                                        <div class="woocommerce-product-header">
+                                            <a href="#!"><img src="{{ item.image.url }}" alt="" style="height: 270px; width: 270px;"></a>
+                                        </div>
+                                        <div class="woocommerce-product-content">
+                                            <div class="woocommerce-product-holder">
+
+                                                <h3 class="woocommerce-product-title"><a href="#!">{{item.title}}</a></h3>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--====== End shop-grid-seciton section ======-->
+        <!--====== Start Footer Area ======-->
+        <footer class="bebsa-footer footer-v2 bg_cover">
+            <div class="container">
+                <div class="footer-widget pb-60 pt-65">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="footer-widget__column footer-widget__about">
+                                <div class="footer-widget__about-logo">
+                                    <a href="{% url 'home' %}"><img src="{% static 'front-end/images/7.png' %}" alt=""></a>
+
+                                            <p style="color:white;"><br>Welcome to Shapno Trading Corporation.
+                                            We are the main department of Shapno Trading Corporation.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="widget contact-widget mb-40">
+                                <h4 class="widget-title">Contact Info</h4>
+                                <div class="contact-info">
+                                    <div class="single-info d-flex align-items-center">
+                                        <div class="icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="info ml-15">
+                                            <p>42/2 M.H. Mansion, 1st Floor, Sayed Awlad Hossain Lane, Islampur, Dhaka-1100, Bangladesh</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-info d-flex align-items-center">
+                                        <div class="icon">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <div class="info ml-15">
+                                            <p><a href="tel:+3292283930002">+88-02-57396327</a></p>
+                                           <!-- <p><a href="tel:+3292283930002">+88-01716-584384</a></p>-->
+                                        </div>
+                                    </div>
+                                    <div class="single-info d-flex align-items-center">
+                                        <div class="icon">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                        <div class="info ml-15">
+                                            <p><a href="mailto:info@stchaque.com">info@stchaque.com</a></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="copyright-text float-left">
+                                <p>Copyright &copy; Shapno Trading Corporation. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                         <div class="col-6">
+                              <div class="ekattorit float-right">
+                                <a href="https://www.ekattorit.com/" target="_blank"><span style="color:#FF0000">EKATTOR</span> <span style="color:green">iT</span></a>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--====== End Footer Area ======-->
+        <!--====== back-to-top ======-->
+        <a href="#" class="back-to-top" ><i class="fas fa-angle-up"></i></a>
+        <script src="{% static 'front-end/js/vendor/modernizr-3.6.0.min.js' %}"></script>
+        <script src="{% static 'front-end/js/vendor/jquery-1.12.4.min.js' %}"></script>
+        <!--====== Bootstrap js ======-->
+        <script src="{% static 'front-end/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'front-end/js/popper.min.js' %}"></script>
+        <!--====== Slick js ======-->
+        <script src="{% static 'front-end/js/slick.min.js' %}"></script>
+        <!--====== Magnific Popup js ======-->
+        <script src="{% static 'front-end/js/jquery.magnific-popup.min.js' %}"></script>
+        <!--====== Isotope js ======-->
+        <script src="{% static 'front-end/js/isotope.pkgd.min.js' %}"></script>
+        <!--====== Imagesloaded js ======-->
+        <script src="{% static 'front-end/js/imagesloaded.pkgd.min.js' %}"></script>
+        <!--====== Easy Pie Chart ======-->
+        <script src="{% static 'front-end/js/jquery.easypiechart.min.js' %}"></script>
+        <!--====== counterup js ======-->
+        <script src="{% static 'front-end/js/jquery.counterup.min.js' %}"></script>
+        <!--====== waypoints js ======-->
+        <script src="{% static 'front-end/js/waypoints.min.js' %}"></script>
+        <!--====== Nice select js ======-->
+        <script src="{% static 'front-end/js/jquery.nice-select.min.js' %}"></script>
+        <!--====== Nice number js ======-->
+        <script src="{% static 'front-end/js/jquery.nice-number.min.js' %}"></script>
+        <!--====== Jquery ui js ======-->
+        <script src="{% static 'front-end/js/jquery-ui.min.js' %}"></script>
+        <!--====== wow js ======-->
+        <script src="{% static 'front-end/js/wow.min.js' %}"></script>
+        <!--====== Main js ======-->
+        <script src="{% static 'front-end/js/main.js' %}"></script>
+    </body>
+
+</html>

@@ -1,0 +1,422 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <!--====== Required meta tags ======-->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--====== Title ======-->
+        <title>Contact Us - STC</title>
+        <!--====== Favicon Icon ======-->
+        <link rel="shortcut icon" href="{% static 'front-end/images/favicon.ico' %}" type="image/png">
+       <!--====== Bootstrap css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/bootstrap.min.css' %}">
+        <!--====== Fontawesome css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/fonts/fontawesome/css/all.css' %}">
+        <!--====== Fontawesome css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/fonts/flaticon/flaticon.css' %}">
+        <!--====== Magnific Popup css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/magnific-popup.css' %}">
+        <!--====== Slick css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/slick.css' %}">
+        <!--====== Nice select css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/nice-select.css' %}">
+        <!--====== Jquery ui css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/jquery-ui.min.css' %}">
+        <!--====== Animate css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/animate.css' %}">
+        <!--====== Default css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/default.css' %}">
+        <!--====== Style css ======-->
+        <link rel="stylesheet" href="{% static 'front-end/css/style.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--====== Start Preloader ======-->
+        <div class="preloader">
+            <div class="lds-ellipsis">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!--====== End Preloader ======-->
+        <!--====== Search From ======-->
+		<div class="modal fade show" id="search-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form>
+                        <div class="form_group">
+                        	<input type="text" class="form_control" placeholder="Search here...">
+                        	<button class="search_btn"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!--====== Search From ======-->
+        <!--====== Start Header ======-->
+        <header class="header-area header-area-v1">
+            <!--
+            <div class="header-top">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="col-lg-8">
+                            <div class="top-left">
+                                <ul>
+                                    <li><span><i class="fas fa-envelope"></i><a href="mailto:info@webmail.com">info@webmail.com</a></span></li>
+                                    <li><span><i class="fas fa-phone"></i><a href="tel:+9484844849493">+948 484 4849 493</a></span></li>
+                                    <li><span><i class="fas fa-map-marker-alt"></i>234 Green Street, NY, USA</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="top-right">
+                                <ul class="social-link">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    -->
+                    </div>
+                </div>
+            </div>
+            <div class="header-navigation">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2 col-md-6 col-6">
+                            <div class="site-branding">
+                                <div class="brand-logo">
+                                    <a href="{% url 'home' %}"><img src="{% static 'front-end/images/5.png' %}" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 col-md-4 col-4">
+                            <div class="nav-menu">
+                                <!-- Mobile Menu Logo -->
+                                <div class="site-branding text-center ml-2 mr-2 mb-4 d-none">
+                                    <div class="brand-logo">
+                                        <a href="{% url 'home' %}"><img src="{% static 'front-end/images/logo-1.png' %}" alt=""></a>
+                                    </div>
+                                </div>
+                                <!-- Search form -->
+                                <!--<div class="nav-search d-none">
+                                    <form>
+                                        <div class="form_group">
+                                            <input type="search" class="form_control" name="search" placeholder="Search Here">
+                                        </div>
+                                    </form>
+                                </div>-->
+                                <!-- navbar-close -->
+                                <div class="navbar-close">
+                                    <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                </div>
+                                <!-- main menu -->
+                                <nav class="main-menu">
+                                    <ul>
+                                        <li class="menu-item menu-item-has-children"><a href="{% url 'home' %}"><b>Home</b></a>
+
+                                        </li>
+                                        <li class="menu-item"><a href="{% url 'about' %}"><b>About Us</b></a></li>
+
+                                        <li class="menu-item menu-item-has-children"><a href="{% url 'product' %}"><b>Our Products</b></a>
+
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="{% url 'gallery' %}"><b>Gallery</b></a>
+
+                                        </li>
+
+                                        <li class="menu-item"><a href="{% url 'contact' %}"><b>Contact Us</b></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- navbar toggler -->
+                            <div class="navbar-toggler float-right">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </header>
+        <!--====== End Header ======-->
+        <!--====== Start breadcrumbs-section section ======-->
+        <section class="breadcrumbs-section bg_cover" style="background-image: url('{% static 'front-end/images/bg/breadcrumbs-bg.jpg' %}');">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="breadcrumbs-content text-center">
+                            <h1>Contact Us</h1>
+                            <ul class="link">
+                                <li><a href="{% url 'home' %}">Home</a></li>
+                                <li class="active">Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--====== End breadcrumbs-section section ======-->
+        <!--====== Start contact-area-section section ======-->
+        <section class="contact-area-section light-bg pt-120 pb-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title text-center mb-60">
+                            <span class="span">Contact Us</span>
+                            <h2>Get In Touch</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="contact-form">
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form_group">
+                                            <input type="text" class="form_control" placeholder="Your Name" name="name" required>
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form_group">
+                                            <input type="text" class="form_control" placeholder="Your Email" name="name" required>
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form_group">
+                                            <input type="text" class="form_control" placeholder="Your Phone Number" name="name" required>
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form_group">
+                                            <input type="text" class="form_control" placeholder="Company Name" name="name" required>
+                                            <i class="far fa-copyright"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form_group">
+                                            <input type="text" class="form_control" placeholder="Address" name="name" required>
+                                            <i class="far fa-address-card"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form_group">
+                                            <select>
+                                                <option data-disply="Subject">Subject</option>
+                                                <option value="1">Customer Support</option>
+                                                <option value="2">Admin Support</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form_group">
+                                            <textarea class="form_control" placeholder="Write Message" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form_group text-center">
+                                            <button class="main-btn">Send Message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="contact-area-section light-bg pt-120 pb-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+
+                    </div>
+                </div>
+
+                <div class="contact-info-wrapper">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="info-box text-center">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Dhaka Office</h4>
+                                    <p>42/2 M.H. Mansion, 1st Floor, Sayed Awlad Hossain Lane, Islampur, Dhaka-1100, Bangladesh</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="info-box text-center">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Madhabdi Office</h4>
+                                    <p>74, H K Tower (1st Floor),</p>
+                                    <p>Anandani, Madhabdi, Narsingdi,</p>
+                                    <p>Bangladesh.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="info-box text-center">
+                                <div class="icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Phone Number</h4>
+                                    <p> +88-02-5739632</p>
+                                     <p> +88-01714070782</p>
+                                     <p><span style="font-size: 15px;">+88-01616584384</span>(<i class="fa fa-whatsapp" style="font-size: 20px;color: green;"></i>)</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="info-box text-center">
+                                <div class="icon">
+                                    <i class="fas fa-envelope-square"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Web & Email</h4>
+                                    <p>www.stchaque.com</p>
+
+                                    <p>info@stchaque.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--====== End contact-area-section section ======-->
+        <!--====== Start Contact map section ======-->
+        <section class="contact-map-section">
+            <div class="map_box">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.3140523445101!2d90.40651931096193!3d23.710807059581942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9e785fa56fb%3A0xfefdcab0e2691ff7!2zU0hBUE5PIFRSQURJTkcgQ09SUE9SQVRJT04g4Ka44KeN4Kas4Kaq4KeN4KaoIOCmn-CnjeCmsOCnh-CmoeCmv-CmgiDgppXgprDgp43gpqrgp4vgprDgp4fgprbgpqg!5e0!3m2!1sen!2sbd!4v1627724610985!5m2!1sen!2sbd" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <!--====== End Contact map section ======-->
+        <!--====== Start Footer Area ======-->
+        <footer class="bebsa-footer footer-v2 bg_cover">
+            <div class="container">
+                <div class="footer-widget pb-60 pt-65">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="footer-widget__column footer-widget__about">
+                                <div class="footer-widget__about-logo">
+                                    <a href="{% url 'home' %}"><img src="{% static 'front-end/images/7.png' %}" alt=""></a>
+
+                                            <p style="color:white;"><br>Welcome to Shapno Trading Corporation.
+                                            We are the main department of Shapno Trading Corporation.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="widget contact-widget mb-40">
+                                <h4 class="widget-title">Contact Info</h4>
+                                  <div class="contact-info">
+                                    <div class="single-info d-flex align-items-center">
+                                        <div class="icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="info ml-15">
+                                            <p>42/2 M.H. Mansion, 1st Floor, Sayed Awlad Hossain Lane, Islampur, Dhaka-1100, Bangladesh</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-info d-flex align-items-center">
+                                        <div class="icon">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <div class="info ml-15">
+                                            <p><a href="tel:+3292283930002">+88-02-57396327</a></p>
+                                           <!-- <p><a href="tel:+3292283930002">+88-01716-584384</a></p>-->
+                                        </div>
+                                    </div>
+                                    <div class="single-info d-flex align-items-center">
+                                        <div class="icon">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                        <div class="info ml-15">
+                                            <p><a href="mailto:info@stchaque.com">info@stchaque.com</a></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="copyright-text float-left">
+                                <p>Copyright &copy; Shapno Trading Corporation. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                         <div class="col-6">
+                              <div class="ekattorit float-right">
+                                <a href="https://www.ekattorit.com/" target="_blank"><span style="color:#FF0000">EKATTOR</span> <span style="color:green">iT</span></a>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--====== End Footer Area ======-->
+        <!--====== back-to-top ======-->
+        <a href="#" class="back-to-top" ><i class="fas fa-angle-up"></i></a>
+                <!--====== Jquery js ======-->
+        <script src="{% static 'front-end/js/vendor/modernizr-3.6.0.min.js' %}"></script>
+        <script src="{% static 'front-end/js/vendor/jquery-1.12.4.min.js' %}"></script>
+        <!--====== Bootstrap js ======-->
+        <script src="{% static 'front-end/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'front-end/js/popper.min.js' %}"></script>
+        <!--====== Slick js ======-->
+        <script src="{% static 'front-end/js/slick.min.js' %}"></script>
+        <!--====== Magnific Popup js ======-->
+        <script src="{% static 'front-end/js/jquery.magnific-popup.min.js' %}"></script>
+        <!--====== Isotope js ======-->
+        <script src="{% static 'front-end/js/isotope.pkgd.min.js' %}"></script>
+        <!--====== Imagesloaded js ======-->
+        <script src="{% static 'front-end/js/imagesloaded.pkgd.min.js' %}"></script>
+        <!--====== Easy Pie Chart ======-->
+        <script src="{% static 'front-end/js/jquery.easypiechart.min.js' %}"></script>
+        <!--====== counterup js ======-->
+        <script src="{% static 'front-end/js/jquery.counterup.min.js' %}"></script>
+        <!--====== waypoints js ======-->
+        <script src="{% static 'front-end/js/waypoints.min.js' %}"></script>
+        <!--====== Nice select js ======-->
+        <script src="{% static 'front-end/js/jquery.nice-select.min.js' %}"></script>
+        <!--====== Nice number js ======-->
+        <script src="{% static 'front-end/js/jquery.nice-number.min.js' %}"></script>
+        <!--====== Jquery ui js ======-->
+        <script src="{% static 'front-end/js/jquery-ui.min.js' %}"></script>
+        <!--====== wow js ======-->
+        <script src="{% static 'front-end/js/wow.min.js' %}"></script>
+        <!--====== Main js ======-->
+        <script src="{% static 'front-end/js/main.js' %}"></script>
+    </body>
+
+</html>

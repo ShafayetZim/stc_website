@@ -1,0 +1,105 @@
+{% load static %}
+{% block sidebar %}
+		<!-- ========== Left Sidebar Start ========== -->
+		<div class="vertical-menu">
+			<div data-simplebar class="h-100">
+				<!--- Sidemenu -->
+				<div id="sidebar-menu">
+					<!-- Left Menu Start -->
+					<ul class="metismenu list-unstyled" id="side-menu">
+						<li class="menu-title" key="t-menu">Menu</li>
+						<li>
+							<a href="{% url 'dashboard' %}" class="waves-effect"> <i class="ri-dashboard-line"></i>
+								<!-- <span class="badge rounded-pill bg-success float-end">3</span> -->
+								<span key="t-dashboards">Dashboard</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"> <i class="ri-gallery-upload-line"></i>
+								<span key="t-email">Home</span>
+							</a>
+							<ul class="sub-menu" aria-expanded="false">
+								<li><a href="{% url 'slider-create' %}" key="t-inbox">Add Slider</a>
+								</li>
+								<li><a href="{% url 'dash-slider' %}" key="t-read-email">Slider List</a>
+								</li>
+								<li><a href="{% url 'product-slider-create' %}" key="t-inbox">Add Product Slider</a>
+								</li>
+								<li><a href="{% url 'dash-product-slider' %}" key="t-read-email">Product Slider List</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"> <i class="ri-gallery-line"></i>
+								<span key="t-email">Gallery</span>
+							</a>
+							<ul class="sub-menu" aria-expanded="false">
+								<li><a href="{% url 'gallery-create' %}" key="t-inbox">Add Gallery</a>
+								</li>
+								<li><a href="{% url 'dash-gallery' %}" key="t-read-email">Galley List</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"> <i class="ri-gallery-upload-line"></i>
+								<span key="t-email">Product</span>
+							</a>
+							<ul class="sub-menu" aria-expanded="false">
+								<li><a href="{% url 'product-create' %}" key="t-inbox">Add Product</a>
+								</li>
+								<li><a href="{% url 'dash-product' %}" key="t-read-email">Product List</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="{% url 'calendar' %}" class=" waves-effect"> <i class="ri-calendar-2-line"></i>
+								<span key="t-calendar" >Calendar</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"> <i class="ri-mail-send-line"></i>
+								<span key="t-email">Email</span>
+							</a>
+							<ul class="sub-menu" aria-expanded="false">
+								<li><a href="{% url 'email-inbox' %}" key="t-inbox">Inbox</a>
+								</li>
+								<li><a href="{% url 'email-read' %}" key="t-read-email">Read Email</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="menu-title" key="t-pages">Pages</li>
+						<li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"> <i class="ri-account-circle-line"></i>
+								<span key="t-authentication"> Authentication</span>
+							</a>
+							<ul class="sub-menu" aria-expanded="false">
+								<li><a href="{% url 'auth-login' %}" key="t-login">Login</a>
+								</li>
+								<li><a href="{% url 'auth-register'%}" key="t-register" >Register</a>
+								</li>
+								<li><a href="{% url 'auth-recoverpw'%}" key="t-recover-password" >Recover Password</a>
+								</li>
+								<li><a href="{% url 'auth-lock-screen' %}" key="t-lock-screen" >Lock Screen</a>
+								</li>
+								<li><a href="{% url 'auth-confirm-mail'%}" key="t-confirm-mail" >Confirm Mail</a>
+								</li>
+								<li><a href="{% url 'auth-email-verification'%}" key="t-email-verification" >Email Verification</a>
+								</li>
+								<li><a href="{% url 'auth-two-step-verification' %}" key="t-two-step-verification" >Two Step Verification</a>
+								</li>
+							</ul>
+						</li>
+
+					</ul>
+				</div>
+				<!-- Sidebar -->
+			</div>
+		</div>
+		<!-- Left Sidebar End -->
+{% endblock sidebar %}
