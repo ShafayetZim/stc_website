@@ -18,7 +18,7 @@ Installation in Django Python
  
 >>>To check pip version  
   -py -m pip --version
-  -upgread pip 
+  -upgrade pip
   -py -m pip install --upgrade pip
 
 >>>Installing virtualenv	
