@@ -22,19 +22,19 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     # Menu    
-    path('dashboard/',views.DashboardView.as_view(),name='dashboard'),# Dashboard
-    path('menu/calendar',views.CalendarView.as_view(),name='calendar'),# Calender
+    path('dashboard/',views.DashboardView.as_view(),name='dashboard'),  # Dashboard
+    path('menu/calendar',views.CalendarView.as_view(),name='calendar'),  # Calender
    
     # Apps 
-    path('',include('home.urls')),# home
-    path('ecommerce/',include('ecommerce.urls')),# Ecommerce
-    path('email/',include('mail.urls')),# Email
-    path('layouts/',include('layouts.urls')),# Layout
-    path('pages/',include('utility.urls')),# Utility
-    path('components/',include('components.urls')),# Components
-    path('authentication/',include('authentication.urls')),# Authentication
+    path('',include('home.urls')),  # home
+    path('ecommerce/',include('ecommerce.urls')),  # Ecommerce
+    path('email/',include('mail.urls')),  # Email
+    path('layouts/',include('layouts.urls')),  # Layout
+    path('pages/',include('utility.urls')),  # Utility
+    path('components/',include('components.urls')),  # Components
+    path('authentication/',include('authentication.urls')),  # Authentication
     
-    path('admin/', admin.site.urls),# Admin
+    path('admin/', admin.site.urls),  # Admin
 ]
 
 if settings.DEBUG:
