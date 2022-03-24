@@ -46,6 +46,18 @@ class ProductSliderUpdateForm(forms.ModelForm):
         }
 
 
+class CreateHomeAboutForm(forms.ModelForm):
+    class Meta:
+        model = HomeAbout
+        fields = (
+            'title', 'description', 'image',)
+        widgets = {
+            'title': forms.TextInput(attrs={'class': 'form-control'}),
+            'description': forms.TextInput(attrs={'class': 'form-control'}),
+            'image': forms.FileInput(attrs={'class': 'rounded_list'}),
+        }
+
+
 class CreateGalleryForm(forms.ModelForm):
     class Meta:
         model = Gallery

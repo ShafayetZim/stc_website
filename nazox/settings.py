@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'components',
     'authentication',
     'crispy_forms',
+    'ckeditor',
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 MIDDLEWARE = [
@@ -154,7 +155,7 @@ DEFAULT_FROM_EMAIL = 'gaurav.themesbrand@gmail.com'
 
 
 LOGIN_URL = 'auth-login'
-LOGIN_REDIRECT_URL = 'auth-login'
+LOGIN_REDIRECT_URL = 'dashboard'
 
 
 # LOGIN_REDIRECT_URL = '/'

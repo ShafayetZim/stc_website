@@ -21,6 +21,30 @@ class HomeView(View):
         return render(request, 'home/index.html', context)
 
 
+@login_required
+def add_home_about(request):
+    template_name = 'home/create_home_about.html'
+    message = ''
+
+    if request.method == 'GET':
+        home_form = CreateHomeAboutForm(request.GET or None)
+
+    elif request.method == 'POST':
+        home_form = CreateHomeAboutForm(request.POST, request.FILES)
+        message = ''
+        print(request.POST)
+
+        if type_form.is_valid():
+            obj = type_form.save(commit=False)
+
+            obj.save()
+            message = "Success"
+            return redirect('dashboard')
+
+    return render(request, template_name,
+                  {'home_form': home_form, 'message': message, 'title': "About", 'pageview': "Home"})
+
+
 # create slider
 @login_required
 def create_slider(request):
