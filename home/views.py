@@ -21,6 +21,17 @@ class HomeView(View):
         return render(request, 'home/index.html', context)
 
 
+# description
+class ShowDescriptionView(LoginRequiredMixin, View):
+    def get(self, request):
+        context = {
+            'description': HomeAbout.objects.all(),
+            'title': "Description",
+            'pageview': "Home"
+        }
+        return render(request, 'home/home-description.html', context)
+
+
 @login_required
 def add_home_about(request):
     template_name = 'home/create_home_about.html'
@@ -34,15 +45,32 @@ def add_home_about(request):
         message = ''
         print(request.POST)
 
-        if type_form.is_valid():
-            obj = type_form.save(commit=False)
+        if home_form.is_valid():
+            obj = home_form.save(commit=False)
 
             obj.save()
             message = "Success"
-            return redirect('dashboard')
+            return redirect('home-description')
 
     return render(request, template_name,
                   {'home_form': home_form, 'message': message, 'title': "About", 'pageview': "Home"})
+
+
+# edit-description
+class DescriptionUpdateView(LoginRequiredMixin, UpdateView):
+    model = HomeAbout
+    form_class = DescriptionUpdateForm
+    success_url = reverse_lazy('home-description')
+    template_name = 'home/edit_description.html'
+
+    success_message = "Description was updated successfully"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        print(context)
+        context["title"] = "Update Description"
+        context["pageview"] = "Description"
+        return context
 
 
 # create slider

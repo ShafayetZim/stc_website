@@ -34,5 +34,8 @@ urlpatterns = [
     path('dashboard/product-slider-edit/<int:pk>', views.ProductSliderUpdateView.as_view(), name='product-slider-edit'),  # Product Slider edit
     path('dashboard/delete-product-slider/<int:id>', views.delete_product_slider, name='delete-product-slider'),  # product Slider delete
 
-    path('dashboard/home-about-create', views.add_home_about, name='home-about-create'),  # Home's About create
+    path('dashboard/create-home-description', views.add_home_about, name='home-description-create'),  # Home description create
+    path('dashboard/home-description', views.ShowDescriptionView.as_view(), name='home-description'),  # home description
+    path('dashboard/description-edit/<int:pk>', views.DescriptionUpdateView.as_view(), name='description-edit'),
+    # Product Slider edit
 ]

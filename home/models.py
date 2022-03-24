@@ -23,11 +23,17 @@ class HomeAbout(models.Model):
     description = RichTextField(blank=True, null=True)
     image = models.ImageField(upload_to='about')
 
+    def __str__(self):
+        return self.title
+
 
 class About(models.Model):
     title = models.CharField(max_length=100)
     description = RichTextField(blank=True, null=True)
     image = models.ImageField(upload_to='about')
+
+    def __str__(self):
+        return self.title
 
 
 class Gallery(models.Model):
