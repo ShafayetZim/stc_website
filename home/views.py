@@ -14,7 +14,9 @@ from django.urls import reverse_lazy
 class HomeView(View):
     def get(self, request):
         context = {
-
+            'slider': Slider.objects.all(),
+            'ps': ProductSlider.objects.all(),
+            'description': HomeAbout.objects.all(),
             'title': "Index",
             'pageview': "Home"
         }
@@ -198,7 +200,7 @@ def delete_product_slider(request, id):
 class AboutView(View):
     def get(self, request):
         context = {
-
+            'about': About.objects.all(),
             'title': "About",
             'pageview': "Home"
         }
@@ -386,6 +388,16 @@ class ProductCategory4View(View):
     def get(self, request):
         context = {
             'product': Product.objects.filter(category='Auxiliaries'),
+            'title': "Product",
+            'pageview': "Home"
+        }
+        return render(request, 'home/product.html', context)
+
+
+class ProductCategory5View(View):
+    def get(self, request):
+        context = {
+            'product': Product.objects.filter(category='Others'),
             'title': "Product",
             'pageview': "Home"
         }

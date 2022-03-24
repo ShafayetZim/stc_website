@@ -31,10 +31,10 @@
                                           <h3>Succesfully uploaded : {{img_obj.title}}</h3>
                                           <img src="{{ img_obj.image.url}}" alt="connect" style="max-height:300px">
 
-                                        <a href="{% url 'gallery-create'  %}" style="padding-left: 40px;">
+                                        <a href="{% url 'slider-create'  %}" style="padding-left: 40px;">
                                             <button class="btn btn-outline-info">Add Another</button>
                                         </a>
-                                        <a href="{% url 'dash-gallery' %}">
+                                        <a href="{% url 'dash-slider' %}">
                                             <button class="btn btn-outline-danger">Go to List</button>
                                         </a>
                                         {% endif %}

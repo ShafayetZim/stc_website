@@ -50,6 +50,7 @@ class Product(models.Model):
         ('Flat Bed Screen', 'Flat Bed Screen'),
         ('Reactive Dyes', 'Reactive Dyes'),
         ('Auxiliaries', 'Auxiliaries'),
+        ('Others', 'Others'),
     )
     title = models.CharField(max_length=100)
     category = models.CharField(max_length=100, choices=CATEGORY_CHOICES,)

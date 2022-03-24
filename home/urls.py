@@ -23,6 +23,7 @@ urlpatterns = [
     path('product/category2', views.ProductCategory2View.as_view(), name='product-category2'),  # Category list
     path('product/category3', views.ProductCategory3View.as_view(), name='product-category3'),  # Category list
     path('product/category4', views.ProductCategory4View.as_view(), name='product-category4'),  # Category list
+    path('product/category5', views.ProductCategory5View.as_view(), name='product-category5'),  # Category list
 
     path('dashboard/slider-create', views.create_slider, name='slider-create'),  # Slider create
     path('dashboard/slider-list', views.SliderListView.as_view(), name='dash-slider'),  # Product list

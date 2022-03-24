@@ -166,20 +166,20 @@
         <section class="about-area-v3 pt-120 pb-50">
             <div class="container">
                 <div class="row">
+                    {% for item in about %}
                     <div class="col-lg-6">
                         <div class="about-img mb-60">
-                            <img src="{% static 'front-end/images/about/about-5.jpg' %}" alt="">
+                            <img src="{{ item.image.url }}" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="about-content-box mb-60">
                             <div class="section-title section-title-left">
                                 <span class="span">Since 2010</span>
-                                <h2>Provide Best All Kinds of Textile Dyes, Chemicals & Accessories For You</h2>
+                                <h2 style="">{{item.title}}</h2>
                             </div>
-                            <p>Welcome to Shapno Trading Corporation (STC). Shopno Trading Corporation is a leading Importer & Suppliers All kinds of Textile Dyes, Chemicals & Accessories. Local Supplier Textile, Dying and Printing Industry Since 2010.</p>
 
-                            <p>We provide A house Of Quality Textile Dyes, Chemicals, Rotary Nickel Screen, Flat-Bed Screen (Swiss Mesh), Auxiliaries Items of Sodium Alginate Gum, Blanket Gum (New Dine-T, GT), Natural Gum (Printonix SM-20), End-Ring, Photo Emulsion (RS-100,1203) .Origin of India, China, Swiss, Japan.</p>
+                            <p style="text-align: center;">{{item.description|safe}}</p>
 
                             <div class="row">
                                 <div class="col-lg-6">
@@ -228,6 +228,7 @@
                             </ul>
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
             </div>
         </section><!--====== End About section ======-->

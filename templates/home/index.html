@@ -144,12 +144,14 @@
 
                 </div>
             </div>
+            </div>
         </header>
         <!--====== End Header ======-->
         <!--====== Start Hero section ======-->
         <section class="hero-area-v2">
             <div class="hero-slider-two">
-                <div class="single-slider bg_cover" style="background-image: url(' {% static 'front-end/images/bg/sopno3.jpg' %} '); height: 10px;">
+                {% for item in slider %}
+                <div class="single-slider bg_cover" style="background-image: url({{ item.image.url }}); height: 10px;">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -158,36 +160,8 @@
                         </div>
                     </div>
                 </div>
+                {% endfor %}
 
-                <div class="single-slider bg_cover" style="background-image: url(' {% static 'front-end/images/bg/sopno2.jpg' %} '); height: 10px;">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-slider bg_cover" style="background-image: url(' {% static 'front-end/images/bg/slider1.jpg' %} '); height: 10px;">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-slider bg_cover" style="background-image: url(' {% static 'front-end/images/bg/slider2.jpg' %} '); height: 10px;">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <!--====== End Hero section ======-->
@@ -195,9 +169,10 @@
         <section class="about-area-v1 pb-60">
             <div class="container">
                 <div class="row align-items-center" style="margin-top: 22px;">
+                    {% for item in description %}
                     <div class="col-lg-6">
                         <div class="about-img mb-60 wow slideInLeft">
-                            <img src="{% static 'front-end/images/about/about-4.jpg' %}" alt="">
+                            <img src="{{ item.image.url }}" alt="">
                             <div class="experience-box">
                                 <p><span class="big-text">Since</span></p><br>
                                 <p><span class="big-text">2010</span></p>
@@ -209,9 +184,9 @@
                         <div class="about-content-box mb-60">
                             <div class="section-title mb-40 wow flipInY">
                                 <span class="span">About Us</span>
-                                <h2>Shapno Trading Corporation</h2>
+                                <h2>{{item.title}}</h2>
                             </div>
-                            <p>It is a long established fact that a reader will be distracted the readable content of a page when looking at its layout. The point of usineg Lorem Ipsum is that it has a more normal distribution.</p>
+                            <p> {{item.description|safe}}</p>
                             <div class="row about-box wow fadeInDown">
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="box d-flex mb-30">
@@ -260,6 +235,7 @@
                             <a href="{% url 'about' %}" class="main-btn">More About us</a>
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
             </div>
         </section>
@@ -282,42 +258,16 @@
             </div>
             <div class="portfolio-wrapper">
                 <div class="row protfolio-slider-one wow fadeInUp">
+                    {% for item in ps %}
                     <div class="col-lg-4">
                         <div class="portfolio-item">
                             <div class="portfolio-img">
-                                <img src="{% static 'front-end/images/portfolio/6.jpg' %}" alt="portfolio">
+                                <img src="{{ item.image.url }}" alt="portfolio">
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="portfolio-item">
-                            <div class="portfolio-img">
-                                <img src="{% static 'front-end/images/portfolio/5.jpg' %}" alt="portfolio">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="portfolio-item">
-                            <div class="portfolio-img">
-                                <img src="{% static 'front-end/images/portfolio/7.jpg' %}" alt="portfolio">
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="portfolio-item">
-                            <div class="portfolio-img">
-                                <img src="{% static 'front-end/images/portfolio/8.jpg' %}" alt="portfolio">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="portfolio-item">
-                            <div class="portfolio-img">
-                                <img src="{% static 'front-end/images/portfolio/9.jpg' %}" alt="portfolio">
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </section>
