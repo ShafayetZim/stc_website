@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d670c7d5-f074-45e2-9152-141e91cb19e5" name="Changes" comment="sidebar updated">
-      <change afterPath="$PROJECT_DIR$/media/about/about-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/edit_description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/home-description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home/about-description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home/create_about_description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home/edit_about_description.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/create_home_about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/create_home_about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/partials/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/sidebar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

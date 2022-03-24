@@ -20,10 +20,10 @@
                                     <div class="card-body">
                                         <form method="POST" enctype="multipart/form-data">
                                             <fieldset>
-                                                <legend>Add to Home's About Section</legend>
+                                                <legend>Add to About Section</legend>
                                                 {% csrf_token %}
-                                                {{ home_form.media }}
-                                                {{ home_form.as_p }}
+                                                {{ about_form.media }}
+                                                {{ about_form.as_p }}
                                                 <button type="submit" class="btn btn-primary">Submit</button>
                                             </fieldset>
 

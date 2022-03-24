@@ -21,7 +21,7 @@ class HomeView(View):
         return render(request, 'home/index.html', context)
 
 
-# description
+# home description
 class ShowDescriptionView(LoginRequiredMixin, View):
     def get(self, request):
         context = {
@@ -32,6 +32,7 @@ class ShowDescriptionView(LoginRequiredMixin, View):
         return render(request, 'home/home-description.html', context)
 
 
+# add home description
 @login_required
 def add_home_about(request):
     template_name = 'home/create_home_about.html'
@@ -202,6 +203,59 @@ class AboutView(View):
             'pageview': "Home"
         }
         return render(request, 'home/about.html', context)
+
+
+# about description
+class AboutDescriptionView(LoginRequiredMixin, View):
+    def get(self, request):
+        context = {
+            'description': About.objects.all(),
+            'title': "Description",
+            'pageview': "Home"
+        }
+        return render(request, 'home/about-description.html', context)
+
+
+# about description
+@login_required
+def add_about_description(request):
+    template_name = 'home/create_about_description.html'
+    message = ''
+
+    if request.method == 'GET':
+        about_form = CreateAboutDescriptionForm(request.GET or None)
+
+    elif request.method == 'POST':
+        about_form = CreateAboutDescriptionForm(request.POST, request.FILES)
+        message = ''
+        print(request.POST)
+
+        if about_form.is_valid():
+            obj = about_form.save(commit=False)
+
+            obj.save()
+            message = "Success"
+            return redirect('about-description')
+
+    return render(request, template_name,
+                  {'about_form': about_form, 'message': message, 'title': "About", 'pageview': "Home"})
+
+
+# edit about description
+class AboutDescriptionUpdateView(LoginRequiredMixin, UpdateView):
+    model = About
+    form_class = AboutDescriptionUpdateForm
+    success_url = reverse_lazy('about-description')
+    template_name = 'home/edit_about_description.html'
+
+    success_message = "Description was updated successfully"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        print(context)
+        context["title"] = "Update Description"
+        context["pageview"] = "Description"
+        return context
 
 
 # contact view

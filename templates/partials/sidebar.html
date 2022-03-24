@@ -16,21 +16,33 @@
 						</li>
 
 						<li>
-							<a href="javascript: void(0);" class="has-arrow waves-effect"> <i class="ri-gallery-upload-line"></i>
-								<span key="t-email">Home</span>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"> <i class="ri-home-3-line"></i>
+								<span key="t-home">Home</span>
 							</a>
 							<ul class="sub-menu" aria-expanded="false">
-								<li><a href="{% url 'slider-create' %}" key="t-inbox">Add Slider</a>
+								<li><a href="{% url 'slider-create' %}" key="t-slider">Add Slider</a>
 								</li>
-								<li><a href="{% url 'dash-slider' %}" key="t-read-email">Slider List</a>
+								<li><a href="{% url 'dash-slider' %}" key="t-slider-list">Slider List</a>
 								</li>
-								<li><a href="{% url 'product-slider-create' %}" key="t-inbox">Add Product Slider</a>
+								<li><a href="{% url 'product-slider-create' %}" key="t-product">Add Product Slider</a>
 								</li>
-								<li><a href="{% url 'dash-product-slider' %}" key="t-read-email">Product Slider List</a>
+								<li><a href="{% url 'dash-product-slider' %}" key="t-product-list">Product Slider List</a>
 								</li>
-								<li><a href="{% url 'home-description-create' %}" key="t-inbox">Add Description</a>
+								<li><a href="{% url 'home-description-create' %}" key="t-description">Add Description</a>
 								</li>
-								<li><a href="{% url 'home-description' %}" key="t-read-email">Show Description</a>
+								<li><a href="{% url 'home-description' %}" key="t-show-description">Show Description</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"> <i class="ri-government-line"></i>
+								<span key="t-email">About</span>
+							</a>
+							<ul class="sub-menu" aria-expanded="false">
+								<li><a href="{% url 'about-description-create' %}" key="t-about">Add description</a>
+								</li>
+								<li><a href="{% url 'about-description' %}" key="t-about-description">Show Description</a>
 								</li>
 							</ul>
 						</li>
@@ -40,9 +52,9 @@
 								<span key="t-email">Gallery</span>
 							</a>
 							<ul class="sub-menu" aria-expanded="false">
-								<li><a href="{% url 'gallery-create' %}" key="t-inbox">Add Gallery</a>
+								<li><a href="{% url 'gallery-create' %}" key="t-gallery">Add Gallery</a>
 								</li>
-								<li><a href="{% url 'dash-gallery' %}" key="t-read-email">Galley List</a>
+								<li><a href="{% url 'dash-gallery' %}" key="t-gallery-list">Galley List</a>
 								</li>
 							</ul>
 						</li>

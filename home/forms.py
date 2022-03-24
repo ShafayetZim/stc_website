@@ -70,6 +70,30 @@ class DescriptionUpdateForm(forms.ModelForm):
         }
 
 
+class CreateAboutDescriptionForm(forms.ModelForm):
+    class Meta:
+        model = About
+        fields = (
+            'title', 'description', 'image',)
+        widgets = {
+            'title': forms.TextInput(attrs={'class': 'form-control'}),
+            'description': forms.TextInput(attrs={'class': 'form-control'}),
+            'image': forms.FileInput(attrs={'class': 'rounded_list'}),
+        }
+
+
+class AboutDescriptionUpdateForm(forms.ModelForm):
+    class Meta:
+        model = About
+        fields = (
+            'title', 'description', 'image',)
+        widgets = {
+            'title': forms.TextInput(attrs={'class': 'form-control'}),
+            'description': forms.TextInput(attrs={'class': 'form-control'}),
+            'image': forms.FileInput(attrs={'class': 'rounded_list'}),
+        }
+
+
 class CreateGalleryForm(forms.ModelForm):
     class Meta:
         model = Gallery

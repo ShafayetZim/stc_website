@@ -36,6 +36,9 @@ urlpatterns = [
 
     path('dashboard/create-home-description', views.add_home_about, name='home-description-create'),  # Home description create
     path('dashboard/home-description', views.ShowDescriptionView.as_view(), name='home-description'),  # home description
-    path('dashboard/description-edit/<int:pk>', views.DescriptionUpdateView.as_view(), name='description-edit'),
-    # Product Slider edit
+    path('dashboard/description-edit/<int:pk>', views.DescriptionUpdateView.as_view(), name='description-edit'),  # home description edit
+
+    path('dashboard/about-description-edit/<int:pk>', views.AboutDescriptionUpdateView.as_view(), name='about-description-edit'),  # home description edit
+    path('dashboard/create-about-description', views.add_about_description, name='about-description-create'),  # add about description
+    path('dashboard/about-description', views.AboutDescriptionView.as_view(), name='about-description'),  # about description
 ]

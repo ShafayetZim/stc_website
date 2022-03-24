@@ -19,16 +19,27 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <form method="POST" enctype="multipart/form-data">
-                                            <fieldset>
-                                                <legend>Add to Home's About Section</legend>
-                                                {% csrf_token %}
-                                                {{ home_form.media }}
-                                                {{ home_form.as_p }}
-                                                <button type="submit" class="btn btn-primary">Submit</button>
-                                            </fieldset>
+                                            {% csrf_token %}
+                                            {{ form.media }}
+
+                                            <div class="row">
+                                                <div class="form-group mb-3 col-6">
+                                                   {{ form.title|as_crispy_field }}
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="form-group mb-3 col-6">
+                                                   {{ form.description|as_crispy_field }}
+                                                </div>
+                                                <div class="custom-file">
+                                                    {{ form.image|as_crispy_field }}
+                                                </div>
+                                            </div>
+
+                                          <button type="submit" class="btn btn-primary mt-2">Update</button>
 
                                         </form>
-
                                     </div>
                                 </div>
                             </div> <!-- end col -->
@@ -49,5 +60,6 @@
         <script src="{% static 'dashboard/libs/dropzone/min/dropzone.min.js' %}"></script>
 
         <!-- init js -->
+<!--        <script src="{% static 'js/pages/ecommerce-add-product.init.js' %}"></script>-->
         <script src="{% static 'js/pages/form-advanced.init.js' %}"></script>
 {% endblock extra_javascript %}
