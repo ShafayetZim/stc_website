@@ -3,9 +3,10 @@ from django.urls import include, path
 from . import views
 
 urlpatterns = [
-    path('home', views.HomeView.as_view(), name='home'),  # home
+    path('', views.HomeView.as_view(), name='home'),  # home
     path('about', views.AboutView.as_view(), name='about'),  # about
-    path('contact', views.ContactView.as_view(), name='contact'),  # contact
+    # path('contact', views.ContactView.as_view(), name='contact'),  # contact
+    path('contact', views.contact, name='contact'),  # contact
     path('gallery', views.GalleryView.as_view(), name='gallery'),  # gallery
     path('product', views.ProductView.as_view(), name='product'),  # product
 

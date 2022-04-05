@@ -6,6 +6,7 @@ from django.views.generic import UpdateView, CreateView
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
+from django.core.mail import send_mail
 
 # Create your views here.
 
@@ -261,14 +262,35 @@ class AboutDescriptionUpdateView(LoginRequiredMixin, UpdateView):
 
 
 # contact view
-class ContactView(View):
-    def get(self, request):
-        context = {
+# class ContactView(View):
+#     def get(self, request):
+#         context = {
+#
+#             'title': "Contact",
+#             'pageview': "Home"
+#         }
+#         return render(request, 'home/contact.html', context)
 
-            'title': "Contact",
-            'pageview': "Home"
-        }
-        return render(request, 'home/contact.html', context)
+
+def contact(request):
+    if request.method == "POST":
+        message_name = request.POST['name']
+        message_email = request.POST['email']
+        message_body = request.POST['body']
+        message_address = request.POST['address']
+
+        send_mail(
+            message_name,
+            message_body + "\n" + message_email + "\n" + message_address,
+            message_body,
+            ['zim.ekattorit@gmail.com'],
+        )
+        print(message_name, message_email, message_body)
+
+        return render(request,'home/contact.html', {'message_name': message_name, 'title': "Contact", 'pageview': "Home"})
+
+    else:
+        return render(request, 'home/contact.html', {})
 
 
 # gallery view
