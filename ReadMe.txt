@@ -4,7 +4,7 @@ Installation in Django Python
  ->https://www.python.org/downloads/
 
 >>For Windows OS 
- -Download python  from windows store
+ -Download python from windows store
  -Select the Python's version to download.
  -Click on the Install Now
  -Installation in Process
@@ -92,102 +92,10 @@ STATIC_ROOT= os.path.join(BASE_DIR,'assets')
 
 >Run Command In Terminal
 -python manage.py collectstatic
-
->>>Authentication Configuration
-Windwos:-Install Package:-pip install Django-Verify-Email
-Linux:-Install Package:-pip3 install Django-Verify-Email
--Goto settings.py of Main Directory
-
--SMTP CONFIGURATION
-	EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-	EMAIL_HOST = 'smtp.gmail.com'
-	EMAIL_PORT = 587
-	EMAIL_USE_TLS = True
-	EMAIL_HOST_USER = '#####YOUR EMAIL ADDRESS########'
-	EMAIL_HOST_PASSWORD = '#####YOUR HOST Password########'
-	DEFAULT_FROM_EMAIL = '#####YOUR EMAIL ADDRESS########'
-	SERVER_EMAIL = '#####YOUR EMAIL ADDRESS########'
 	 
      
 >>>To Set Default Layout
  >Goto templates/partial/base.html
- 
-<!--=================================================================================================================================================-->
-                                                            <!--Vertical Layout View-->
-<!--=================================================================================================================================================-->
-Step - 1 -> Goto nazox\templates\partials\base.html
-Step - 2 -> add attribute into the body tag [data-sidebar="dark"]
-		Example -> <body data-sidebar="dark"">
-Step - 3 -> Comment this code {% include 'partials/hori-header.html' %} and {% include 'partials/hori-sidebar.html' %}
-Step - 4 -> Uncomment this code {% include 'partials/header.html' %} and {% include 'partials/sidebar.html' %}
-
-						<!-- (Light Sidebar) -->
-Step - 1 -> Goto nazox\templates\partials\base.html
-Step - 2 -> Add data attribute data-topbar="dark" body element to have light sidebar.
-            Example -> <body data-sidebar="dark"">
-
-						<!-- (Dark Sidebar) -->
-Step - 1 -> Goto nazox\templates\partials\base.html
-Step - 2 -> Add data attribute data-sidebar="dark" body element to have dark sidebar.
-            Example -> <body data-sidebar="dark">
-
-						<!-- (Colored Sidebar) -->
-Step - 1 -> Goto nazox\templates\partials\base.html
-Step - 2 -> Add data attribute data-sidebar="colored" body element to have colored sidebar.
-            Example -> <body data-sidebar="colored">
-
-						<!-- (Compact Sidebar) -->
-Step - 1 -> Goto nazox\templates\partials\base.html
-Step - 2 -> Add data attribute data-sidebar="dark" data-sidebar-size="small" body element to have Compact sidebar.
-            Example -> <body data-sidebar="dark" data-sidebar-size="small">
-
-						<!-- (Icon Sidebar) -->
-Step - 1 -> Goto nazox\templates\partials\base.html
-Step - 2 -> Add data attribute data-sidebar="dark" data-keep-enlarged="true" class="vertical-collpsed" body element to have Icon sidebar.
-
-
-						<!-- (Boxed Layout) -->
-Step - 1 -> Goto nazox\templates\partials\base.html
-Step - 2 -> Add data attribute  data-sidebar="dark" data-keep-enlarged="true" class="vertical-collpsed" data-layout-size="boxed"  body element to have boxed layout.
-            Example -> <body data-sidebar="dark" data-keep-enlarged="true" class="vertical-collpsed" data-layout-size="boxed">
-
-<!--=================================================================================================================================================-->
-
-
-
-<!--=================================================================================================================================================-->
-
-
-<!--=================================================================================================================================================-->
-                                                            <!--light/dark/RTL Mode-->
-<!--=================================================================================================================================================-->
-			<!--- Dark Mode --->
-Step - 1 -> Goto nazox\templates\partials\base.html
-Step - 2 -> Add attribute into the body tag [data-topbar="dark" data-layout-mode="dark" data-sidebar="dark" ] 
-		Example -> <body data-topbar="dark" data-layout-mode="dark" data-sidebar="dark">
-
-			<!--- Light Mode --->
-Step - 1 -> Goto nazox\templates\partials\base.html
-Step - 2 -> Add attribute into the body tag [data-layout-mode="light"] 
-		Example -> <body data-layout-mode="light" >
-
-			<!--- RTL Mode --->
-Step - 1 -> Goto nazox\templates\partials\base.html
-Step - 2 -> Add attribute into the HTML tag [lang="en" dir="rtl"] 
-		Example -> <html lang="en" dir="rtl" >
-Step - 3 -> Go to nazox/static/js/app.js
-            Go to line number 176 and add [alreadyVisited = "rtl-mode-switch";]
-
-<!--=================================================================================================================================================-->
-
-
-<!--=================================================================================================================================================-->
-                                                            <!-- Preloader -->
-<!--=================================================================================================================================================-->
-			<!--- Fluid --->
-Step - 1 -> Goto nazox\templates\partials\base.html
-Step - 2 -> Preloader block in uncomment this code {% include 'partials/preloader.html' %} 
-<!--=================================================================================================================================================-->
 
 
 >>> Migrate Model 

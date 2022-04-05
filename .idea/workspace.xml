@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d670c7d5-f074-45e2-9152-141e91cb19e5" name="Changes" comment="font size fixed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d670c7d5-f074-45e2-9152-141e91cb19e5" name="Changes" comment="readme edited">
+      <change beforePath="$PROJECT_DIR$/ReadMe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +11,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d585be64-bf9b-4006-8213-a12bd88aa44f" />
+        <option name="url" value="https://github.com/ShafayetZim/stc_website.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectId" id="26jVyepOvTmSygGuZ1fZ5ApPSjS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -92,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648357711929</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="readme edited">
+      <created>1649138916674</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1649138916674</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,6 +131,7 @@
     <MESSAGE value="about description added" />
     <MESSAGE value="slider added" />
     <MESSAGE value="font size fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="font size fixed" />
+    <MESSAGE value="readme edited" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme edited" />
   </component>
 </project>
