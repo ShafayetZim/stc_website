@@ -154,29 +154,6 @@ Step - 2 -> Add data attribute  data-sidebar="dark" data-keep-enlarged="true" cl
 <!--=================================================================================================================================================-->
 
 
-<!--=================================================================================================================================================-->
-                                                            <!--Horizontal Body View-->
-<!--=================================================================================================================================================-->
-Step - 1 -> Goto nazox\templates\partials\base.html
-Step - 2 -> Add attribute into the body tag [data-topbar="dark" data-layout="horizontal"]
-		Example -> <body data-topbar="dark" data-layout="horizontal">
-Step - 3 -> Comment this code {% include 'partials/header.html' %} and {% include 'partials/sidebar.html' %}
-Step - 4 -> Uncomment this code {% include 'partials/hori-header.html' %} and {% include 'partials/hori-sidebar.html' %}
-
-						<!-- (Topbar Light) -->
-Step - 1 -> Goto nazox\templates\partials\base.html
-Step - 2 -> Add data attribute data-topbar="light" data-layout="horizontal"  body element to have light topbar and dark menubar.
-            Example -> <body data-topbar="light" data-layout="horizontal">
-
-						<!-- (Colored Topbar) -->
-Step - 1 -> Goto nazox\templates\partials\base.html
-Step - 2 -> Add data attribute data-topbar="colored" data-layout="horizontal"  body element to have light topbar and dark menubar.
-            Example -> <body data-topbar="colored" data-layout="horizontal">
-
-						<!-- (Boxed Layout) -->
-Step - 1 -> Goto nazox\templates\partials\base.html
-Step - 2 -> Add data attribute  data-topbar="dark" data-layout="horizontal" data-layout-size="boxed"  body element to have boxed layout.
-            Example -> <body data-topbar="dark" data-layout="horizontal" data-layout-size="boxed">
 
 <!--=================================================================================================================================================-->
 
