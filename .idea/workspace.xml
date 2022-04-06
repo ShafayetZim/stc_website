@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d670c7d5-f074-45e2-9152-141e91cb19e5" name="Changes" comment="email added">
+    <list default="true" id="d670c7d5-f074-45e2-9152-141e91cb19e5" name="Changes" comment="email form fixed">
+      <change afterPath="$PROJECT_DIR$/../Professional Courier/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Professional Courier/templates/pdf/receipt.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Professional Courier/templates/pdf/receipt.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nazox/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nazox/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nazox/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/nazox/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/authentication/auth-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/authentication/auth-login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/authentication/auth-logout-done.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/authentication/auth-logout-done.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649155877699</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="email form fixed">
+      <created>1649229688938</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1649229688938</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +159,7 @@
     <MESSAGE value="font size fixed" />
     <MESSAGE value="readme edited" />
     <MESSAGE value="email added" />
-    <option name="LAST_COMMIT_MESSAGE" value="email added" />
+    <MESSAGE value="email form fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="email form fixed" />
   </component>
 </project>

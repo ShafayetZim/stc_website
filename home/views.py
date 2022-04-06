@@ -276,8 +276,8 @@ def contact(request):
     if request.method == "POST":
         name = request.POST['name']
         email = request.POST['email']
-        body = request.POST['body']
         address = request.POST['address']
+        body = request.POST['body']
         phone = request.POST['phone']
         company = request.POST['company']
         sub = request.POST['select']
@@ -285,7 +285,7 @@ def contact(request):
         send_mail(
             sub,
             body + "\n" + "Name: " + name + "\n" + "Email: " + email + "\n" + "Phone: " + phone + "\n" + "Company: " + company + "\n" + "Address: " + address,
-            body,
+            'zim.ekattorit@gmail.com',
             ['zim.ekattorit@gmail.com'],
         )
         print(name, email, body)

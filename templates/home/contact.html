@@ -142,7 +142,7 @@
                                 <span></span><span></span><span></span>
                             </div>
                         </div>
-
+                    </div>
                 </div>
             </div>
         </header>
@@ -163,8 +163,16 @@
                 </div>
             </div>
         </section>
+        <br/><br/>
         <!--====== End breadcrumbs-section section ======-->
         <!--====== Start contact-area-section section ======-->
+        {% if name %}
+        <center>
+            <h3>Thanks {{ name }}!</h3>
+            <p> We received your email and will respond shortly.</p>
+        </center>
+        <br/><br/>
+        {% else %}
         <section class="contact-area-section light-bg pt-120 pb-60">
             <div class="container">
                 <div class="row justify-content-center">
@@ -239,6 +247,7 @@
 
             </div>
         </section>
+        {% endif %}
         <section class="contact-area-section light-bg pt-120 pb-60">
             <div class="container">
                 <div class="row justify-content-center">
