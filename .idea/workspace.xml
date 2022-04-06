@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d670c7d5-f074-45e2-9152-141e91cb19e5" name="Changes" comment="readme edited">
+    <list default="true" id="d670c7d5-f074-45e2-9152-141e91cb19e5" name="Changes" comment="email added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nazox/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nazox/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nazox/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/nazox/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/authentication/auth-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/authentication/auth-login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/authentication/auth-logout-done.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/authentication/auth-logout-done.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +40,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Professional Courier" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -119,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649139248622</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="email added">
+      <created>1649155877699</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1649155877699</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +153,7 @@
     <MESSAGE value="slider added" />
     <MESSAGE value="font size fixed" />
     <MESSAGE value="readme edited" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme edited" />
+    <MESSAGE value="email added" />
+    <option name="LAST_COMMIT_MESSAGE" value="email added" />
   </component>
 </project>

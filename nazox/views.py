@@ -9,7 +9,7 @@ class DashboardView(LoginRequiredMixin,View):
         print(request.session)
         greeting = {}
         greeting['title'] = "Dashboard"
-        greeting['pageview'] = "Nazox"        
+        greeting['pageview'] = "STC"
         return render(request, 'menu/index.html',greeting)
 
 # Calender
@@ -17,6 +17,6 @@ class CalendarView(LoginRequiredMixin,View):
     def get(self, request):
         greeting = {}
         greeting['title'] = "Calendar"
-        greeting['pageview'] = "Nazox"        
+        greeting['pageview'] = "STC"
         return render(request, 'menu/calendar.html',greeting)
 

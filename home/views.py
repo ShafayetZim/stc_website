@@ -274,20 +274,23 @@ class AboutDescriptionUpdateView(LoginRequiredMixin, UpdateView):
 
 def contact(request):
     if request.method == "POST":
-        message_name = request.POST['name']
-        message_email = request.POST['email']
-        message_body = request.POST['body']
-        message_address = request.POST['address']
+        name = request.POST['name']
+        email = request.POST['email']
+        body = request.POST['body']
+        address = request.POST['address']
+        phone = request.POST['phone']
+        company = request.POST['company']
+        sub = request.POST['select']
 
         send_mail(
-            message_name,
-            message_body + "\n" + message_email + "\n" + message_address,
-            message_body,
+            sub,
+            body + "\n" + "Name: " + name + "\n" + "Email: " + email + "\n" + "Phone: " + phone + "\n" + "Company: " + company + "\n" + "Address: " + address,
+            body,
             ['zim.ekattorit@gmail.com'],
         )
-        print(message_name, message_email, message_body)
+        print(name, email, body)
 
-        return render(request,'home/contact.html', {'message_name': message_name, 'title': "Contact", 'pageview': "Home"})
+        return render(request, 'home/contact.html', {'name': name, 'title': "Contact", 'pageview': "Home"})
 
     else:
         return render(request, 'home/contact.html', {})
