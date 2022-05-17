@@ -126,7 +126,13 @@
                                         <li class="menu-item"><a href="{% url 'about' %}"><b>About Us</b></a></li>
 
                                         <li class="menu-item menu-item-has-children"><a href="{% url 'product' %}"><b>Our Products</b></a>
-
+                                        <ul class="sub-menu">
+                                            <li><a href="{% url 'product-category' %}">Rotary Nickel Screen</a></li>
+                                            <li><a href="{% url 'product-category2' %}">Flat-Bed Screen</a></li>
+                                            <li><a href="{% url 'product-category3' %}">Reactive Dyes</a></li>
+                                            <li><a href="{% url 'product-category4' %}">Auxiliaries</a></li>
+                                            <li><a href="{% url 'product-category5' %}">Others</a></li>
+                                        </ul>
                                         </li>
                                         <li class="menu-item menu-item-has-children"><a href="{% url 'gallery' %}"><b>Gallery</b></a>
 
@@ -377,31 +383,30 @@
             <div class="container">
                 <div class="footer-widget pb-60 pt-65">
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="footer-widget__column footer-widget__about">
-                                <div class="footer-widget__about-logo">
+                                <div class="footer-widget__about-logo text-center">
                                     <a href="{% url 'home' %}"><img src="{% static 'front-end/images/7.png' %}" alt=""></a>
-                                            <p style="color:white;"><br>Welcome to Shapno Trading Corporation.
+
+                                            <p style="color:white;" class="text-justify"><br>Welcome to Shapno Trading Corporation.
                                             We are the main department of Shapno Trading Corporation.</p>
                                 </div>
 
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
 
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
 
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="widget contact-widget mb-40">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="widget contact-widget mb-40 text-center">
                                 <h4 class="widget-title">Contact Info</h4>
-                                  <div class="contact-info">
+                                <div class="contact-info">
                                     <div class="single-info d-flex align-items-center">
                                         <div class="icon">
                                             <i class="fas fa-map-marker-alt"></i>
                                         </div>
-                                        <div class="info ml-15">
+                                        <div class="info ml-15 text-justify">
                                             <p>42/2 M.H. Mansion, 1st Floor, Sayed Awlad Hossain Lane, Islampur, Dhaka-1100, Bangladesh</p>
                                         </div>
                                     </div>
@@ -419,7 +424,7 @@
                                             <i class="fa fa-envelope"></i>
                                         </div>
                                         <div class="info ml-15">
-                                            <p><a href="mailto:info@stchaque.com">info@stchaque.com</a></p>
+                                            <p><a href="mailto:office@webgmail.com">info@stchaque.com</a></p>
 
                                         </div>
                                     </div>
