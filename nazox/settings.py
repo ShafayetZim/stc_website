@@ -156,7 +156,7 @@ EMAIL_HOST = 'host44.registrar-servers.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'enamul@stchaque.com'
-EMAIL_HOST_PASSWORD = '##STC.2022'
+EMAIL_HOST_PASSWORD = '***'
 DEFAULT_FROM_EMAIL = 'enamul@stchaque.com'
 
 

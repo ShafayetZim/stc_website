@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d670c7d5-f074-45e2-9152-141e91cb19e5" name="Changes" comment="dashboard content updated">
+    <list default="true" id="d670c7d5-f074-45e2-9152-141e91cb19e5" name="Changes" comment="login next added">
       <change beforePath="$PROJECT_DIR$/../Professional Courier/data_set/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Professional Courier/data_set/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Professional Courier/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../Professional Courier/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nazox/.env" beforeDir="false" afterPath="$PROJECT_DIR$/nazox/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nazox/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nazox/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/authentication/auth-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/authentication/auth-login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +230,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652874800817</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="mail setting updated">
+      <created>1652874963230</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1652874963230</updated>
+    </task>
+    <task id="LOCAL-00028" summary="login next added">
+      <created>1652875041075</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1652875041075</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -271,6 +283,8 @@
     <MESSAGE value="category added in navbar &amp; footer updated" />
     <MESSAGE value="footer updated" />
     <MESSAGE value="dashboard content updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="dashboard content updated" />
+    <MESSAGE value="mail setting updated" />
+    <MESSAGE value="login next added" />
+    <option name="LAST_COMMIT_MESSAGE" value="login next added" />
   </component>
 </project>
