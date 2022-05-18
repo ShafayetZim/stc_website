@@ -285,8 +285,8 @@ def contact(request):
         send_mail(
             sub,
             body + "\n" + "Name: " + name + "\n" + "Email: " + email + "\n" + "Phone: " + phone + "\n" + "Company: " + company + "\n" + "Address: " + address,
-            'zim.ekattorit@gmail.com',
-            ['zim.ekattorit@gmail.com'],
+            'enamul@stchaque.com',
+            ['enamul@stchaque.com'],
         )
         print(name, email, body)
 

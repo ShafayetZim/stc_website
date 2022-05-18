@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d670c7d5-f074-45e2-9152-141e91cb19e5" name="Changes" comment="unclosed header div fixed, phone no updated">
+    <list default="true" id="d670c7d5-f074-45e2-9152-141e91cb19e5" name="Changes" comment="footer updated">
       <change beforePath="$PROJECT_DIR$/../Professional Courier/data_set/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Professional Courier/data_set/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Professional Courier/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../Professional Courier/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/authentication/auth-change-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/authentication/auth-change-password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/partials/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nazox/.env" beforeDir="false" afterPath="$PROJECT_DIR$/nazox/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nazox/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nazox/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/authentication/auth-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/authentication/auth-login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/partials/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/content.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +165,63 @@
       <option name="project" value="LOCAL" />
       <updated>1652615526295</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="meta content added">
+      <created>1652615843231</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1652615843231</updated>
+    </task>
+    <task id="LOCAL-00018" summary="header footer updated">
+      <created>1652706333439</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1652706333439</updated>
+    </task>
+    <task id="LOCAL-00019" summary="favicon updated">
+      <created>1652706455848</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1652706455848</updated>
+    </task>
+    <task id="LOCAL-00020" summary="product category added in navbar">
+      <created>1652761535563</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1652761535563</updated>
+    </task>
+    <task id="LOCAL-00021" summary="product category added in navbar &amp; footer updated">
+      <created>1652761652651</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1652761652651</updated>
+    </task>
+    <task id="LOCAL-00022" summary="category added in navbar &amp; footer updated">
+      <created>1652761799566</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1652761799566</updated>
+    </task>
+    <task id="LOCAL-00023" summary="category added in navbar &amp; footer updated">
+      <created>1652761835762</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1652761835762</updated>
+    </task>
+    <task id="LOCAL-00024" summary="footer updated">
+      <created>1652761853253</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1652761853253</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +252,13 @@
     <MESSAGE value="pass hide" />
     <MESSAGE value="added environ file" />
     <MESSAGE value="unclosed header div fixed, phone no updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="unclosed header div fixed, phone no updated" />
+    <MESSAGE value="meta content added" />
+    <MESSAGE value="header footer updated" />
+    <MESSAGE value="favicon updated" />
+    <MESSAGE value="product category added in navbar" />
+    <MESSAGE value="product category added in navbar &amp; footer updated" />
+    <MESSAGE value="category added in navbar &amp; footer updated" />
+    <MESSAGE value="footer updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="footer updated" />
   </component>
 </project>
