@@ -39,7 +39,10 @@ class LoginView(View):
                     LoginView.username.append(username)
                     data={}
                     data['success_message'] ='Successfully login'
-                    return JsonResponse(data,safe=False)
+                    if 'next' in request.POST:
+                        return redirect(request.POST.get('next'), data)
+                    else:
+                        return JsonResponse(data,safe=False)
                 else:
                     data={}
                     data['error_message'] ='Invalid Credentials'

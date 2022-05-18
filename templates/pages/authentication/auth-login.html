@@ -68,6 +68,10 @@
                                                         <!-- <label for="userpassword">Password</label>
                                                         <input type="password" class="form-control" id="userpassword" placeholder="Enter password"> -->
                                                     </div>
+
+                                                    {% if request.GET.next %}
+                                                        <input type="hidden" name="next" value="{{ request.GET.next }}">
+                                                    {% endif %}
                             
                                                     <div class="form-check">
                                                         <input type="checkbox" class="form-check-input" id="customControlInline">
