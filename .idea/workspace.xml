@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d670c7d5-f074-45e2-9152-141e91cb19e5" name="Changes" comment="footer updated">
+    <list default="true" id="d670c7d5-f074-45e2-9152-141e91cb19e5" name="Changes" comment="dashboard content updated">
       <change beforePath="$PROJECT_DIR$/../Professional Courier/data_set/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Professional Courier/data_set/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Professional Courier/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../Professional Courier/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authentication/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nazox/.env" beforeDir="false" afterPath="$PROJECT_DIR$/nazox/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nazox/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nazox/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pages/authentication/auth-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/authentication/auth-login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/partials/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/content.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +218,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652761853253</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="footer updated">
+      <created>1652873509595</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1652873509595</updated>
+    </task>
+    <task id="LOCAL-00026" summary="dashboard content updated">
+      <created>1652874800817</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1652874800817</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,6 +270,7 @@
     <MESSAGE value="product category added in navbar &amp; footer updated" />
     <MESSAGE value="category added in navbar &amp; footer updated" />
     <MESSAGE value="footer updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="footer updated" />
+    <MESSAGE value="dashboard content updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="dashboard content updated" />
   </component>
 </project>

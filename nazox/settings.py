@@ -152,12 +152,12 @@ environ.Env.read_env()
 
 # SMTP Configure
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'host44.registrar-servers.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = env('email_user')
-EMAIL_HOST_PASSWORD = env('email_pass')
-DEFAULT_FROM_EMAIL = env('email_user')
+EMAIL_HOST_USER = 'enamul@stchaque.com'
+EMAIL_HOST_PASSWORD = '##STC.2022'
+DEFAULT_FROM_EMAIL = 'enamul@stchaque.com'
 
 
 LOGIN_URL = 'auth-login'
